@@ -1,0 +1,53 @@
+nav{
+    background-color: #333;
+    color: white;
+    padding: 10px;
+}
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    display: inline;
+    margin-right: 20px;
+}
+nav ul li a{
+    color: aqua;
+    text-decoration: none;
+}
+nav ul li a:hover {
+    text-decoration: underline;
+}
+section{
+    padding: 20px;
+}
+footer {
+    position: fixed;
+    scroll-padding-top: 0px;
+    padding: 10px 10px 10px 10px;
+    padding-bottom: 5px;
+    width: 100%; 
+    height: 40px;
+    background: #2858de;
+    color: white;
+    text-align: center;
+}
+ /* Smart Phone*/
+ @media screen and (min-width:320px){
+    body{
+    background-color: brown;
+    }                
+}
+/* Tablet and ipad*/
+@media screen and (min-width:768px) and (max-width:1024px){
+    body{
+    background-color: green;
+    }                
+}
+/* Desktops and Laptops*/
+@media screen and (min-width:1224px) and (max-width:1424px){
+    body{
+    background-color: yellow;
+    }                
+}

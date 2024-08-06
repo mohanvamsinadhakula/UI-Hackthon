@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title>National Airlines</title>
+        <link rel="stylesheet" href="Mystyles2.css">
+        <style>
+            body{
+                background: url(a2.avif);
+                color: bisque;
+                width: 100%;
+                height: 800px;
+                background-size: cover;
+                background-position: center;
+            }
+            h3{
+                color: rgba(24, 226, 142, 0.384);
+            }
+        </style>
+        <script>
+            function loginValidation(){
+                var uname=document.myform.uname.value;
+                var password=document.myform.password.value;
+                if(uname==null || uname==""){
+                    alert("Name cannot be Blank");
+                    return false;
+                }
+                else if(password.length<6){
+                    alert("Password Must be 6 Charachters");
+                    return false
+                }
+                return true;
+            }
+        </script>
+    </head>
+    <h1 ><marquee>Welcome to National Airlines Devloped By the Indian Airlines</marquee></h1>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Contact.html">Contact Us</a></li>
+                <li><a href="RegistartionPage.html">Sign Up</a></li>
+                <li><a href="LoginPage.html">Login</a></li>
+            </ul>
+        </nav>
+        <h1 color="red" align="center">Login Page</h1><br>
+        
+        <br><hr>
+        <form name="myform" action="Home.html" onsubmit="loginValidation(this)">
+        <center>    UserName: <input type="text" name="uname"><br>
+            Password: <input type="password" name="password"><br> 
+            <hr>
+            <input type="submit" value="Submit">      
+        </center>
+    </form>
+    <hr>
+    </body>
+</html>
